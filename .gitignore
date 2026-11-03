@@ -1,0 +1,24 @@
+# Secrets and local config: templates only in this repo, real values never
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials*
+
+# Local tool installs and model files
+*-venv/
+venv/
+__pycache__/
+*.onnx
+*.pt
+*.pth
+*.safetensors
+out/
+narration-*.wav
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
